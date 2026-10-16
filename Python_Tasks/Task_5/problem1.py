@@ -1,1 +1,13 @@
 
+# Problem: Find the Runner-Up Score!
+# HackerRank Link: https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    
+    # Convert to set to remove duplicates, then sort
+    unique_scores = sorted(set(arr))
+    
+    # Second last element is runner-up
+    print(unique_scores[-2])
