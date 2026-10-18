@@ -1,0 +1,6 @@
+n = int(input())
+english = set(map(int, input().split()))
+m = int(input())
+french = set(map(int, input().split()))
+all_students = english.union(french)
+print(len(all_students))
